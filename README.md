@@ -20,9 +20,7 @@ With the app, you can:
 
 <div style="display:inline-block">
 <img src="https://user-images.githubusercontent.com/43597558/190987636-a9263f05-e2cd-4c65-87b8-b619a3351b72.jpeg" width="300" height="600" style="margin:20px">
+ <img src="https://user-images.githubusercontent.com/43597558/190989445-4ea95343-5707-4d86-88b1-c42f12e840c4.jpeg" width="300" height="600" style="margin:20px">
 <img src="https://user-images.githubusercontent.com/43597558/190987726-21e63295-5b25-4078-aeee-7aaf48c2e78e.jpeg" width="300" height="600" style="margin:20px">
-<img src="https://user-images.githubusercontent.com/43597558/190987747-f9835835-4cbc-4d8c-bdd8-e886048ff9f0.jpeg" width="300" height="600" style="margin:20px">
-
 </div>
-
 
