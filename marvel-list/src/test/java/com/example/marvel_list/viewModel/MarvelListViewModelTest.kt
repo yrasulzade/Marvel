@@ -1,9 +1,9 @@
-package com.example.characters.viewModel
+package com.example.marvel_list.viewModel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.example.characters.MainCoroutineRule
-import com.example.characters.getOrAwaitValueTest
-import com.example.characters.ui.MarvelListViewModel
+import com.example.marvel_list.MainCoroutineRule
+import com.example.marvel_list.getOrAwaitValueTest
+import com.example.marvel_list.ui.MarvelListViewModel
 import com.example.core.fragmentTypes.FragmentTypes
 import com.example.domain.entity.CharacterRestModel
 import com.example.domain.entity.MarvelApiResponse

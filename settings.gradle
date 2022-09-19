@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 rootProject.name = "Marvel"
 include ':app'
 include ':details'
-include ':characters'
+include ':marvel-list'
 include ':core'
 include ':data'
 include ':domain'

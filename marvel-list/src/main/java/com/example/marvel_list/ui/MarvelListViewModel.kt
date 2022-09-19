@@ -1,4 +1,4 @@
-package com.example.characters.ui
+package com.example.marvel_list.ui
 
 import android.content.Context
 import com.example.core.base.BaseViewModel

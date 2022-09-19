@@ -1,8 +1,8 @@
-package com.example.characters.adapter
+package com.example.marvel_list.adapter
 
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.characters.databinding.ItemCharacterBinding
+import com.example.marvel_list.databinding.ItemCharacterBinding
 import com.example.domain.entity.MarvelListModel
 
 class MarvelViewHolder(

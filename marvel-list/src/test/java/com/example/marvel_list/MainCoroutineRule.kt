@@ -1,4 +1,4 @@
-package com.example.characters
+package com.example.marvel_list
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

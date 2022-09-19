@@ -1,8 +1,5 @@
 package com.example.data.api
 
-import com.example.data.util.ApiConstants.MARVEL_API_HASH
-import com.example.data.util.ApiConstants.MARVEL_API_PUBLIC_KEY
-import com.example.data.util.ApiConstants.MARVEL_API_TS
 import com.example.data.util.Endpoints.API_KEY
 import com.example.data.util.Endpoints.CHARACTERS
 import com.example.data.util.Endpoints.CHARACTER_DETAILS

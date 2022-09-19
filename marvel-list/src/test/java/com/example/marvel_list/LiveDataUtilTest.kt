@@ -1,4 +1,4 @@
-package com.example.characters
+package com.example.marvel_list
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData

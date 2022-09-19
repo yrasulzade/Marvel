@@ -1,10 +1,10 @@
-package com.example.characters.adapter
+package com.example.marvel_list.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import coil.load
-import com.example.characters.databinding.ItemCharacterBinding
+import com.example.marvel_list.databinding.ItemCharacterBinding
 import com.example.domain.entity.MarvelListModel
 
 class MarvelAdapter(private val itemClick: (Int) -> Unit) :

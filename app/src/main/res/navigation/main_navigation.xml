@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/charactersFragment"
-        android:name="com.example.characters.ui.MarvelListFragment"
+        android:name="com.example.marvel_list.ui.MarvelListFragment"
         android:label="@string/characters" />
 
     <fragment
         android:id="@+id/comicsFragment"
-        android:name="com.example.characters.ui.MarvelListFragment"
+        android:name="com.example.marvel_list.ui.MarvelListFragment"
         android:label="@string/comics" />
 
     <fragment
         android:id="@+id/creatorsFragment"
-        android:name="com.example.characters.ui.MarvelListFragment"
+        android:name="com.example.marvel_list.ui.MarvelListFragment"
         android:label="@string/creators" />
 
     <fragment
         android:id="@+id/seriesFragment"
-        android:name="com.example.characters.ui.MarvelListFragment"
+        android:name="com.example.marvel_list.ui.MarvelListFragment"
         android:label="@string/series" />
 
     <include app:graph="@navigation/details_navigation" />

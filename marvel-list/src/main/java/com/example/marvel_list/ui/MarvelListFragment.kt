@@ -1,4 +1,4 @@
-package com.example.characters.ui
+package com.example.marvel_list.ui
 
 import android.annotation.SuppressLint
 import android.net.Uri
@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.characters.R
-import com.example.characters.adapter.MarvelAdapter
-import com.example.characters.databinding.FragmentCharactersBinding
+import com.example.marvel_list.R
+import com.example.marvel_list.adapter.MarvelAdapter
+import com.example.marvel_list.databinding.FragmentCharactersBinding
 import com.example.core.base.BaseFragment
 import com.example.core.entity.PaginationState
 import com.example.core.fragmentTypes.FragmentTypes
