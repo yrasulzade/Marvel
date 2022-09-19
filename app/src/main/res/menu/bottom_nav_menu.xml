@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/charactersFragment"
+        android:icon="@drawable/ic_baseline_accessible_24"
+        android:title="@string/characters" />
+
+    <item
+        android:id="@+id/comicsFragment"
+        android:icon="@drawable/ic_baseline_beach_access_24"
+        android:title="@string/comics" />
+
+    <item
+        android:id="@+id/creatorsFragment"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="@string/creators" />
+
+    <item
+        android:id="@+id/seriesFragment"
+        android:icon="@drawable/ic_baseline_bookmark_24"
+        android:title="@string/series" />
+
+</menu>

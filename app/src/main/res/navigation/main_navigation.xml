@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/charactersFragment">
+
+
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.characters.ui.MarvelListFragment"
+        android:label="@string/characters" />
+
+    <fragment
+        android:id="@+id/comicsFragment"
+        android:name="com.example.characters.ui.MarvelListFragment"
+        android:label="@string/comics" />
+
+    <fragment
+        android:id="@+id/creatorsFragment"
+        android:name="com.example.characters.ui.MarvelListFragment"
+        android:label="@string/creators" />
+
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.example.characters.ui.MarvelListFragment"
+        android:label="@string/series" />
+
+    <include app:graph="@navigation/details_navigation" />
+
+</navigation>

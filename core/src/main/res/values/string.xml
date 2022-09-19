@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="general_error">Something went wrong</string>
+    <string name="characters">Characters</string>
+    <string name="comics">Comics</string>
+    <string name="creators">Creators</string>
+    <string name="series">Series</string>
+</resources>
