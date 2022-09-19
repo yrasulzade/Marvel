@@ -1,7 +1,7 @@
 # Marvel
 
 ## This project focuses on showing the usage of Android Architecture Components and how this components can be used in an application with MVVM architecture
-- ViewModel, LiveData, Repository
+- ViewModel, LiveData, UseCase, Repository
 - Kotlin
 - Hilt
 - Pagination
