@@ -17,6 +17,7 @@
         <entry key="characters/src/main/res/layout/fragment_characters.xml" value="0.15729166666666666" />
         <entry key="characters/src/main/res/layout/item_character.xml" value="0.2947916666666667" />
         <entry key="comics/src/main/res/layout/fragment_comics.xml" value="0.2947916666666667" />
+        <entry key="core/src/main/res/drawable/ic_baseline_search_24.xml" value="0.13" />
         <entry key="core/src/main/res/layout/progress_dialog.xml" value="0.2947916666666667" />
         <entry key="core/src/main/res/menu/options_menu.xml" value="0.1" />
         <entry key="creators/src/main/res/layout/fragment_comics.xml" value="0.2947916666666667" />

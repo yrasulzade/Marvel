@@ -68,15 +68,16 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 
-        menuInflater.inflate(com.example.core.R.menu.options_menu, menu)
+        menuInflater.inflate(R.menu.options_menu, menu)
 
         val searchManager = getSystemService(SEARCH_SERVICE) as SearchManager
-        val searchView = menu.findItem(com.example.core.R.id.search).actionView as SearchView
-        val search = menu.findItem(com.example.core.R.id.search)
+        val searchView = menu.findItem(R.id.search).actionView as SearchView
+        val search = menu.findItem(R.id.search)
 
         searchView.setSearchableInfo(
             searchManager.getSearchableInfo(componentName)
         )
+
         searchView.isIconifiedByDefault = false
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {

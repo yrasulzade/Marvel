@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="Marvel.app.dynamicfeature" target="11" />
+      <module name="Marvel.app.nativelib" target="11" />
+      <module name="Marvel.details" target="11" />
+      <module name="Marvel.features.main.mylibrary" target="11" />
+      <module name="Marvel.marvel-list" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
