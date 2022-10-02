@@ -1,8 +1,8 @@
 plugins{
     id(ApplicationConfig.library)
     id(ApplicationConfig.kotlinAndroid)
-    id(ApplicationConfig.kotlinKapt)
     id(ApplicationConfig.hiltAndroid)
+    id(ApplicationConfig.kotlinKapt)
 }
 
 android {
@@ -32,10 +32,6 @@ android {
 
     kotlinOptions {
         jvmTarget = ApplicationConfig.jvmTarget
-    }
-
-    buildFeatures {
-        viewBinding = true
     }
 }
 

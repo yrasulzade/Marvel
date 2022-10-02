@@ -1,9 +1,9 @@
 plugins{
     id(ApplicationConfig.library)
     id(ApplicationConfig.kotlinAndroid)
-    id(ApplicationConfig.kotlinKapt)
-    id(ApplicationConfig.hiltAndroid)
     id(ApplicationConfig.safeargs)
+    id(ApplicationConfig.hiltAndroid)
+    id(ApplicationConfig.kotlinKapt)
 }
 
 android {
