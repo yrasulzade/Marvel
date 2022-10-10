@@ -6,24 +6,22 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.marvel_list.R
-import com.example.marvel_list.adapter.MarvelAdapter
-import com.example.marvel_list.databinding.FragmentCharactersBinding
 import com.example.core.base.BaseFragment
 import com.example.core.entity.PaginationState
 import com.example.core.fragmentTypes.FragmentTypes
 import com.example.core.manager.SearchViewManager
 import com.example.core.util.PaginationScrollListener
 import com.example.domain.entity.MarvelListModel
-import dagger.hilt.android.AndroidEntryPoint
+import com.example.marvel_list.R
+import com.example.marvel_list.adapter.MarvelAdapter
+import com.example.marvel_list.databinding.FragmentCharactersBinding
+import org.koin.android.ext.android.get
 
-@AndroidEntryPoint
 class MarvelListFragment : BaseFragment<FragmentCharactersBinding, MarvelListViewModel>() {
     private var currentFragmentType: FragmentTypes = FragmentTypes.Comics
-    private lateinit var viewModel: MarvelListViewModel
+    private var viewModel = get<MarvelListViewModel>()
     private var loading = false
     private var isLastPage = false
     private var clearAllData = false
@@ -86,10 +84,9 @@ class MarvelListFragment : BaseFragment<FragmentCharactersBinding, MarvelListVie
 
     override fun getLayoutId(): Int = R.layout.fragment_characters
 
-    override fun getViewModel(): MarvelListViewModel {
-        viewModel = ViewModelProvider(requireActivity())[MarvelListViewModel::class.java]
-        return viewModel
-    }
+//    override fun getViewModel(): MarvelListViewModel {
+//        return viewModel
+//    }
 
     private fun initRecyclerView() {
         charactersAdapter = MarvelAdapter {
@@ -110,7 +107,7 @@ class MarvelListFragment : BaseFragment<FragmentCharactersBinding, MarvelListVie
             override fun loadMoreItems() {
                 loading = true
                 currentPage += 1
-                viewModel.fetchCharacters(currentFragmentType, currentPage, false, searchQuery)
+//                viewModel.fetchCharacters(currentFragmentType, currentPage, false, searchQuery)
             }
 
             override val lastPageCalled: Boolean
@@ -118,5 +115,9 @@ class MarvelListFragment : BaseFragment<FragmentCharactersBinding, MarvelListVie
             override val isLoading: Boolean
                 get() = loading
         })
+    }
+
+    override fun getViewModel(): MarvelListViewModel {
+        return viewModel
     }
 }

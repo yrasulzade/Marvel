@@ -2,8 +2,6 @@ plugins{
     id(ApplicationConfig.library)
     id(ApplicationConfig.kotlinAndroid)
     id(ApplicationConfig.safeargs)
-    id(ApplicationConfig.hiltAndroid)
-    id(ApplicationConfig.kotlinKapt)
 }
 
 android {
@@ -51,8 +49,7 @@ dependencies {
 
     implementation(Dependencies.coil)
 
-    implementation(Dependencies.hilt)
-    kapt(Dependencies.hilt_compiler)
+    implementation(Dependencies.koin)
 
     testImplementation(Dependencies.testLibraries)
     androidTestImplementation(Dependencies.androidTest)

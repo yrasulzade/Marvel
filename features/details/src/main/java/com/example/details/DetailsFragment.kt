@@ -6,16 +6,14 @@ import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
 import androidx.core.view.children
 import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import coil.load
 import com.example.core.base.BaseFragment
 import com.example.details.databinding.FragmentDetailsBinding
-import dagger.hilt.android.AndroidEntryPoint
+import org.koin.android.ext.android.get
 
-@AndroidEntryPoint
 class DetailsFragment : BaseFragment<FragmentDetailsBinding, DetailsViewModel>() {
-    private lateinit var viewModel: DetailsViewModel
+    private var viewModel = get<DetailsViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +40,6 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding, DetailsViewModel>()
     override fun getLayoutId(): Int = R.layout.fragment_details
 
     override fun getViewModel(): DetailsViewModel {
-        viewModel = ViewModelProvider(this)[DetailsViewModel::class.java]
         return viewModel
     }
 

@@ -14,9 +14,7 @@ object ApplicationVersions {
     const val material = "1.6.1"
     const val constraintLayout = "2.1.4"
 
-    //Hilt
-    const val hilt = "2.43.2"
-    const val hilt_compiler = "2.42"
+    const val koin = "3.2.0"
 
     // Test
     const val jUnit = "4.13.2"
@@ -37,7 +35,4 @@ object ApplicationVersions {
     const val lifecycleViewModel = "2.5.1"
 
     const val coil = "2.2.0"
-
 }
-
-

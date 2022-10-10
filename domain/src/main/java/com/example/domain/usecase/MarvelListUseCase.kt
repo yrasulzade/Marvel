@@ -3,9 +3,8 @@ package com.example.domain.usecase
 import com.example.core.fragmentTypes.FragmentTypes
 import com.example.domain.entity.MarvelListModel
 import com.example.domain.repository.MarvelListRepository
-import javax.inject.Inject
 
-class MarvelListUseCase @Inject constructor(private val repository: MarvelListRepository) {
+class MarvelListUseCase constructor(private val repository: MarvelListRepository) {
     suspend fun execute(
         type: FragmentTypes,
         page: Int,

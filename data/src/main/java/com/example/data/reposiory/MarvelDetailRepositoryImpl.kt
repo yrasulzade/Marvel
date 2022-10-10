@@ -4,9 +4,8 @@ import com.example.data.api.ApiService
 import com.example.domain.entity.*
 import com.example.domain.repository.MarvelDetailRepository
 import retrofit2.Response
-import javax.inject.Inject
 
-class MarvelDetailRepositoryImpl @Inject constructor(private val apiService: ApiService) :
+class MarvelDetailRepositoryImpl constructor(private val apiService: ApiService) :
     MarvelDetailRepository {
 
     override suspend fun getCharacterDetails(id: Int): Response<MarvelApiResponse<CharacterRestModel>> {

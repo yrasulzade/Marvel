@@ -2,7 +2,6 @@ plugins {
     id(ApplicationConfig.application)
     id(ApplicationConfig.kotlinAndroid)
     id(ApplicationConfig.safeargs)
-    id(ApplicationConfig.hiltAndroid)
     id(ApplicationConfig.kotlinKapt)
 }
 
@@ -40,7 +39,10 @@ android {
 
 dependencies {
     implementation(project(ApplicationModules.marvel_list))
+    implementation(project(ApplicationModules.feature_details))
     implementation(project(ApplicationModules.core))
+    implementation(project(ApplicationModules.domain))
+    implementation(project(ApplicationModules.data))
 
     implementation(Dependencies.appLibraries)
 
@@ -49,6 +51,5 @@ dependencies {
 
     implementation(Dependencies.navigationLibraries)
 
-    implementation(Dependencies.hilt)
-    kapt(Dependencies.hilt_compiler)
+    implementation(Dependencies.koin)
 }

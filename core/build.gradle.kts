@@ -1,7 +1,6 @@
 plugins{
     id(ApplicationConfig.library)
     id(ApplicationConfig.kotlinAndroid)
-    id(ApplicationConfig.hiltAndroid)
     id(ApplicationConfig.kotlinKapt)
 }
 
@@ -40,8 +39,7 @@ dependencies {
 
     implementation(Dependencies.appLibraries)
 
-    implementation(Dependencies.hilt)
-    kapt(Dependencies.hilt_compiler)
+    implementation(Dependencies.koin)
 
     implementation(Dependencies.network)
 

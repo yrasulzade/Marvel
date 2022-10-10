@@ -18,7 +18,6 @@ object ApplicationConfig {
     const val library = "com.android.library"
     const val kotlinAndroid = "kotlin-android"
     const val kotlinKapt = "kotlin-kapt"
-    const val hiltAndroid = "dagger.hilt.android.plugin"
     const val safeargs = "androidx.navigation.safeargs.kotlin"
     const val androidLib = "com.android.library"
     const val jetbrainsKotlin = "org.jetbrains.kotlin.android"

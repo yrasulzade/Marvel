@@ -10,7 +10,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.inputmethod.InputMethodManager
 import android.widget.SearchView
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -22,10 +21,8 @@ import com.example.core.manager.SearchViewManager
 import com.example.marvel.R
 import com.example.marvel.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
-@AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
     private lateinit var viewModel: MainViewModel
     private lateinit var navController: NavController
@@ -60,11 +57,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
         ActivityMainBinding.inflate(layoutInflater)
 
     override fun getLayoutId(): Int = R.layout.activity_main
-
-    override fun getViewModel(): MainViewModel {
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-        return viewModel
-    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 

@@ -8,14 +8,12 @@ import com.example.core.util.SingleLiveEvent
 import com.example.core.util.Utils.ifNonNull
 import com.example.domain.entity.MarvelListModel
 import com.example.domain.usecase.MarvelListUseCase
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
-import javax.inject.Inject
 
-@HiltViewModel
-class MarvelListViewModel @Inject constructor(private val marvelListUseCase: MarvelListUseCase) :
+class MarvelListViewModel constructor(private val marvelListUseCase: MarvelListUseCase) :
     BaseViewModel() {
+
     private val _paginationState = SingleLiveEvent<PaginationState>()
     val paginationState = _paginationState
 

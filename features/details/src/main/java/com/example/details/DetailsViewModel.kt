@@ -4,13 +4,10 @@ import androidx.lifecycle.MutableLiveData
 import com.example.core.base.BaseViewModel
 import com.example.domain.entity.MarvelListModel
 import com.example.domain.usecase.MarvelDetailsUseCase
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
-import javax.inject.Inject
 
-@HiltViewModel
-class DetailsViewModel @Inject constructor(private val marvelDetailsUseCase: MarvelDetailsUseCase) :
+class DetailsViewModel constructor(private val marvelDetailsUseCase: MarvelDetailsUseCase) :
     BaseViewModel() {
     private val _details = MutableLiveData<MarvelListModel>()
     val details = _details
